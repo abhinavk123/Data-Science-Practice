@@ -1,0 +1,5 @@
+no_train_samples = int(0.8*EMP_DATA.shape[0])
+no_test_samples = EMP_DATA.shape[0] - no_train_samples
+train = EMP_DATA.iloc[:no_train_samples,:]
+test = EMP_DATA.iloc[no_train_samples:,:]
+train.shape,test.shape
