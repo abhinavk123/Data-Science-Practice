@@ -6,7 +6,7 @@
 # website: http://jupyter.org/
 
 Kaggle/titanic/prediction.rar
-
+debug.log
 .ipynb_checkpoints
 */.ipynb_checkpoints/*
 
