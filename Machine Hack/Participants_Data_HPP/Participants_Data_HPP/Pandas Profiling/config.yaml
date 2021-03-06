@@ -1,0 +1,114 @@
+title: Pandas Profiling Report
+dataset:
+    description: ''
+    creator: ''
+    author: ''
+    copyright_holder: ''
+    copyright_year: ''
+    url: ''
+variables:
+    descriptions: {}
+show_variable_description: yes
+pool_size: 0
+progress_bar: yes
+vars:
+    num:
+        quantiles:
+        - 0.05
+        - 0.25
+        - 0.5
+        - 0.75
+        - 0.95
+        skewness_threshold: 20
+        low_categorical_threshold: 5
+        chi_squared_threshold: 0.999
+    cat:
+        length: yes
+        unicode: no
+        cardinality_threshold: 50
+        n_obs: 5
+        chi_squared_threshold: 0.999
+        coerce_str_to_date: no
+        redact: no
+    bool:
+        n_obs: 3
+    file:
+        active: no
+    image:
+        active: no
+        exif: yes
+        hash: yes
+sort: None
+missing_diagrams:
+    bar: yes
+    matrix: yes
+    heatmap: yes
+    dendrogram: yes
+correlations:
+    pearson:
+        calculate: yes
+        warn_high_correlations: yes
+        threshold: 0.9
+    spearman:
+        calculate: yes
+        warn_high_correlations: no
+    kendall:
+        calculate: yes
+        warn_high_correlations: no
+    phi_k:
+        calculate: yes
+        warn_high_correlations: no
+    cramers:
+        calculate: yes
+        warn_high_correlations: yes
+        threshold: 0.9
+    recoded:
+        calculate: no
+        warn_high_correlations: no
+        threshold: 0.0
+interactions:
+    targets: []
+    continuous: yes
+categorical_maximum_correlation_distinct: 100
+plot:
+    image_format: svg
+    dpi: 800
+    scatter_threshold: 1000
+    correlation:
+        cmap: RdBu
+        bad: '#000000'
+    missing:
+        cmap: RdBu
+        force_labels: yes
+    pie:
+        max_unique: 10
+    histogram:
+        x_axis_labels: yes
+        bins: 50
+        max_bins: 250
+n_obs_unique: 5
+n_extreme_obs: 5
+n_freq_table_max: 10
+memory_deep: no
+duplicates:
+    head: 10
+samples:
+    head: 10
+    tail: 10
+reject_variables: yes
+notebook:
+    iframe:
+        height: 800px
+        width: 100%
+        attribute: srcdoc
+html:
+    minify_html: yes
+    use_local_assets: yes
+    inline: yes
+    navbar_show: yes
+    file_name: None
+    style:
+        theme: None
+        logo: ''
+        primary_color: '#337ab7'
+        full_width: no

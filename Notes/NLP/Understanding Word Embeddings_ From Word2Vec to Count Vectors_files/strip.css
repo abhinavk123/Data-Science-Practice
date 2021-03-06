@@ -1,0 +1,58 @@
+header.fixed #sale-strip {
+    display:none;
+}
+
+#sale-strip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: #ffffff;
+    background: #ee3d24;
+    padding: 8px 0;
+}
+
+#sale-strip a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #ffffff;
+  
+}
+
+#sale-strip #clockdiv {
+    display: flex;
+}
+
+#sale-strip #clockdiv span {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 16px;
+    color: #ffffff;  
+    position: relative;
+}
+
+#sale-strip #clockdiv span sup {
+    position: absolute;
+    top: 5px;
+    right: -14px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+#sale-strip #clockdiv h4 {
+    font-size: 18px;
+    margin: 0px;
+    color: #fff;
+  }
+  
+@media only screen and (max-width: 991px) {
+    #sale-strip {
+        flex-direction: column;
+        padding: 10px 15px;
+    }
+
+    #sale-strip #clockdiv  {
+        margin-top: 10px;
+    }
+    
+}
